@@ -100,7 +100,9 @@ def chip_top_runner():
         # We use the unpowered netlist
         sources.append(proj_path / f"../final/nl/{hdl_toplevel}.nl.v")
 
-        defines = {"USE_POWER_PINS": False}
+        # For now don't use power defines
+        # SRAM expects A_DLY to always be 1'b1 (which doesn't seem to work)
+        #defines = {"USE_POWER_PINS": True}
     else:
         sources.append(proj_path / "../src/chip_top.sv")
         sources.append(proj_path / "../src/chip_core.sv")
