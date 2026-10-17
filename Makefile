@@ -5,7 +5,7 @@ TOP = chip_top
 
 PDK_ROOT ?= $(MAKEFILE_DIR)/IHP-Open-PDK
 PDK ?= ihp-sg13g2
-PDK_COMMIT ?= 7bbb4b5a5b64c446fedc64eacadc33fa65ade276
+PDK_COMMIT ?= 89d42ee6d2fd9b50b86a1aada6fee6673c3e6008
 
 .DEFAULT_GOAL := help
 
